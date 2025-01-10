@@ -1,0 +1,3 @@
+"""
+Mobile test package initialization.
+"""

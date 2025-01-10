@@ -1,0 +1,15 @@
+---
+# iOS Test Configuration
+
+--variable APPIUM_HOST:localhost
+--variable APPIUM_PORT:4723
+--variable PLATFORM_NAME:iOS
+--variable PLATFORM_VERSION:17.2
+--variable DEVICE_NAME:"iPhone 16 Pro"
+--variable AUTOMATION_NAME:XCUITest
+--variable APP:${CURDIR}/../apps/ios/ios-test-app/build/Release-iphonesimulator/TestApp-iphonesimulator.app
+--variable TIMEOUT:30
+--variable RETRY_COUNT:2
+--outputdir results
+--loglevel INFO
+--console verbose 

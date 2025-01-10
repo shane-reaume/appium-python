@@ -1,0 +1,17 @@
+---
+# Android Test Configuration
+
+--variable APPIUM_HOST:localhost
+--variable APPIUM_PORT:4723
+--variable PLATFORM_NAME:Android
+--variable PLATFORM_VERSION:15.0
+--variable DEVICE_NAME:Pixel_7_API_35
+--variable AUTOMATION_NAME:UiAutomator2
+--variable APP:${CURDIR}/../apps/android/TestApp.apk
+--variable APP_PACKAGE:io.appium.android.apis
+--variable APP_ACTIVITY:io.appium.android.apis.ApiDemos
+--variable TIMEOUT:30
+--variable RETRY_COUNT:2
+--outputdir ${CURDIR}/../results
+--loglevel INFO
+--console verbose 

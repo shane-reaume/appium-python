@@ -1,0 +1,62 @@
+{
+  "name": "ios-test-app",
+  "description": "iOS app for testing",
+  "keywords": [
+    "appium",
+    "ios",
+    "testapp"
+  ],
+  "version": "3.1.0",
+  "author": "appium",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appium/ios-test-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appium/ios-test-app/issues"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "os": [
+    "darwin"
+  ],
+  "main": "index.js",
+  "bin": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "Default-568h@2x.png",
+    "gulpfile.js",
+    "index.js",
+    "lib",
+    "Test App 2",
+    "TestApp.xcodeproj"
+  ],
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install",
+    "build": "gulp ios-apps:install",
+    "install": "gulp ios-apps:install",
+    "test": "gulp once",
+    "watch": "gulp watch",
+    "lint": "gulp lint",
+    "lint:fix": "gulp lint --fix",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "precommit-test": "gulp lint"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "precommit-test"
+  ],
+  "devDependencies": {
+    "@appium/eslint-config-appium": "^8.0.0",
+    "@appium/gulp-plugins": "^8.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "pre-commit": "^1.2.2"
+  }
+}
