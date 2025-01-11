@@ -82,7 +82,11 @@ Key configurations:
 appium
 ```
 
-2. Start an Android emulator or connect a device
+2. Start an Android emulator:
+```bash
+# Start the Pixel 7 API 35 emulator in read-only mode
+emulator -avd Pixel_7_API_35 -read-only &
+```
 
 3. Run the tests:
 ```bash
